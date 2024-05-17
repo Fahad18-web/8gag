@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>set the items</title>
+    <link rel="stylesheet" href="upload.css">
+</head>
+
+<body>
+    <div class="nav-cnt">
+        <div class="navbar">
+            <div class="logo">
+                <h3>8GAG</h3>
+            </div>
+            <div class="nav-items">
+                <div class="dropdown">
+                    <i id="dropdownIcon" class="bi bi-person-circle"></i>
+                    <ul id="dropdownList">
+                        <li><a href="index category.html">Edit Categories</a></li>
+                        <li><a href="Edit users.html">Edit users</a></li>
+                        <li><a href="index account.html">Settings</a></li>
+                        <li><a href="index logout.html">Logout</a></li>
+                    </ul>
+                </div>
+                <div id="uploadButton">
+                    <button onclick="showUploadForm()">+ Upload</button>
+                </div>
+                <div id="uploadForm" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeUploadForm()">&times;</span>
+                        <form id="postForm">
+                            <label for="username"> Enter Your Username:</label><br><br>
+                            <input type="text" id="username" name="username" placeholder="Enter Your Username:"><br><br>
+                            <label for="img">Choose--Image:</label><br><br>
+                            <input type="file" id="img" name="img" accept="image/*" placeholder="Choose--Image"><br><br>
+                            <button id="btn-1" type="button" onclick="post()">Post</button><br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left-content">
+            <div class="inner-content">
+                <div class="popularity">
+                    <div class="heading">Popularity</div>
+                    <div class="content-popularity">
+                        <div class="hot"><i class="bi bi-fire"></i><a href="set.html">hot</a></div>
+                        <div class="hot"><i class="bi bi-graph-up-arrow"></i><a href="set.html">trending</a></div>
+                        <div class="hot" style="border-bottom: 1px solid grey;"><i class="bi bi-clock"></i><a
+                                href="set.html">fresh</a></div>
+                    </div>
+                </div>
+                <div class="categories">
+                    <div class="heading-categories">Categories</div>
+                    <div class="content-categories">
+                        <div class="cool"><a href="set.html">Animal</a></div>
+                        <div class="cool"><a href="set.html">Awesome</a></div>
+                        <div class="cool"><a href="set.html">Cool</a></div>
+                        <div class="cool" style="border-bottom: 1px solid grey;"><a href="set.html">Funny</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mainbody">
+            <div id="posts"></div>
+        </div>
+    </div>
+    <script src="upload.js"></script>
+</body>
+
+</html>

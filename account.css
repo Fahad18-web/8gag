@@ -1,0 +1,379 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    background-color: #ffffff;
+    color: #0d7ddf;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5vw;
+    border: 1px solid rgb(205, 205, 205);
+    width: 100vw;
+}
+
+.logo h3 {
+    margin: 0;
+    color: #0d7ddf;
+    font-size: 1.5rem;
+}
+
+/* .nav-items {
+    display: flex;
+    margin-left: 1040px;
+} */
+
+#dropdownList {
+    display: none;
+    position: absolute;
+    top: 200;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    margin-left: -90px;
+}
+
+#dropdownIcon {
+    cursor: pointer;
+    font-size: 33px;
+}
+
+#dropdownList li {
+    list-style-type: none;
+}
+
+#dropdownList li a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    display: flex;
+    /* height: 92vh; */
+    /* width: 100vw; */
+}
+
+.left-content {
+    /* height: 1011vh; */
+    width: 40vw;
+}
+
+.inner-content {
+    padding-left: 1.5vw;
+    width: 30vw;
+}
+
+/* .popularity {
+    height: 40vh;
+} */
+
+.heading {
+    font-size: 26px;
+    color: black;
+    padding-top: 20px;
+    padding-left: 16px;
+    font-family: initial;
+    font-weight: 500;
+}
+
+.content-popularity {
+    width: 100%;
+    padding: 16px;
+}
+
+.content-popularity i {
+    padding-right: 10px;
+}
+
+.hot {
+    height: 37px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+    border-bottom: none;
+    padding-left: 10px;
+    border-radius: 3px;
+    color: blue;
+}
+
+/* .categories {
+    height: 41vh;
+} */
+
+.heading-categories {
+    font-size: 26px;
+    color: black;
+    padding-left: 16px;
+    font-family: initial;
+}
+
+.content-categories {
+    width: 100%;
+    padding: 16px;
+}
+
+.cool {
+    height: 37px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+    border-bottom: none;
+    padding-left: 10px;
+    border-radius: 3px;
+    color: blue;
+}
+
+.mainbody {
+    width: 60vw;
+    padding-top: 1.5vw;
+    display: flex;
+}
+
+.setting-content {
+    /* height: 33vh; */
+    width: 20vw;
+}
+
+.setting-content h3 {
+    /* height: 9vh;
+    width: 100%; */
+    padding-top: 12px;
+    padding-left: 14px;
+    font-size: 2vw;
+}
+
+.setting-content h6 {
+    padding-left: 47px;
+    padding-top: 12px;
+    font-size: 18px;
+}
+
+.setting-content a {
+    text-decoration: none;
+    color: blue;
+}
+
+.setting-content h6:hover{
+    color: white;
+    background-color: rgb(38, 38, 214);
+    border-radius: 6px;
+    border: none;
+}
+
+.username {
+    /* width: 97%;
+    height: 8vh; */
+    border-radius: 7px;
+    border: 1px solid grey;
+    /* border-bottom: none; */
+}
+
+.password {
+    /* width: 97%;
+    height: 8vh; */
+    border-radius: 7px;
+    border: 1px solid grey;
+    /* border-bottom: none; */
+}
+
+.profile {
+    /* width: 97%;
+    height: 8vh; */
+    border-radius: 7px;
+    border: 1px solid grey;
+}
+
+.setting-input {
+    /* height: 54vh;
+    width: 70%; */
+    display: flex;
+    flex-direction: column;
+}
+
+.area {
+    /* height: 54vh; */
+    padding-top: 55px;
+    width: 30vw;
+}
+
+.enter-username {
+    padding: 8px 0px 15px 18px;
+    font-size: 30px;
+}
+
+
+.enter-username h5{
+    font-size: 3vw;
+}
+
+.user-content {
+    /* width: 100%;
+    height: 12vh; */
+    padding-top: 12px;
+    padding-left: 20px;
+}
+
+.user-content input{
+    width: 25vw; 
+    /* height: 7vh; */
+    padding-left: 16px;
+    font-size: 1.5vw;
+}
+
+.save-changes {
+    padding-left: 3vw;
+    /* margin-top: -6vw; */
+}
+
+.save-changes button {
+    /* height: 7vh; */
+    width: 10vw;
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 51, 184);
+    border: 1px solid rgb(43, 43, 189);
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: 1vw;
+    padding: 10px;
+    margin-top: 2vw;
+}
+
+.user-records{
+    margin-left: 35px;
+    margin-top: 20px;
+}
+
+.record button {
+    background-color: blue;
+    color: white;
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+@media only screen and (max-width: 600px){
+    .navbar{
+        width: 100vw;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: row;
+    
+       }
+
+       .left-content{
+        margin-left: 6vw;
+        margin-right: 10vw;
+        width: 80vw;
+        /* margin-top: -15vw; */
+       }
+
+       .inner-content{
+        flex-direction:column ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6vw;
+    }
+
+    .hot{
+        width: 25vw;
+       }
+    
+       .cool{
+        width: 25vw;
+       }
+
+       .mainbody{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        margin: auto;
+       }
+
+       .setting-content{
+        width: 40vw;
+        display: flex;
+        /* margin-top: -15vw; */
+        /* align-items: center; */
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 10vw;
+        /* margin-bottom: 20vw; */
+        flex-wrap: wrap;
+       }
+
+       .setting-input{
+        margin-right: 10vw;
+       }  
+
+
+       .setting-content h3{
+           font-size: 4vw;
+           text-align: center;
+       }
+
+    
+
+    .area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 10vw;
+    }
+
+    .enter-username h5{
+        font-size: 1.3rem;
+
+    }
+
+    .user-content{
+        margin-top: -1vw;
+    }
+
+    .user-content input{
+        width: 30vw;
+        height: 8vh;
+    }
+
+    .save-changes button{
+        width: 15vw;
+        font-size: 1.5vw;
+
+    }
+
+    .user-records{
+        height: 10vh;
+    }
+
+    .user-records h2{
+        font-size: 1.25rem;
+    }
+       
+     
+}

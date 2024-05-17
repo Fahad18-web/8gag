@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Account</title>
+    <link rel="stylesheet" href="account.css">
+</head>
+
+<body>
+     <div class="nav-cnt">
+        <div class="navbar">
+            <div class="logo">
+                <h3>8GAG</h3>
+            </div>
+            <div class="nav-items">
+                <div class="dropdown">
+                    <i id="dropdownIcon" class="bi bi-person-circle"></i>
+                    <ul id="dropdownList">
+                        <li><a href="index category.html">Edit Categories</a></li>
+                        <li><a href="index account.html">Settings</a></li>
+                        <li><a href="index logout.html">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </div>
+    <div class="container">
+        <div class="left-content">
+            <div class="inner-content">
+                <div class="popularity">
+                    <div class="heading">Popularity</div>
+                    <div class="content-popularity">
+                        <div class="hot"><i class="bi bi-fire"></i>hot</div>
+                        <div class="hot"><i class="bi bi-graph-up-arrow"></i>trending</div>
+                        <div class="hot" style="border-bottom: 1px solid grey;"><i class="bi bi-clock"></i>fresh</div>
+                    </div>
+                </div>
+                <div class="categories">
+                    <div class="heading-categories">Categories</div>
+                    <div class="content-categories">
+                        <div class="cool">Animal</div>
+                        <div class="cool">Awesome</div>
+                        <div class="cool">Cool</div>
+                        <div class="cool" style="border-bottom: 1px solid grey;">Funny</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainbody">
+            <div class="setting-content">
+                <h3>Settings</h3>
+                <div class="username">
+                    <a href="index account.html">
+                        <h6>Account</h6>
+                    </a>
+                </div>
+                <div class="password">
+                    <a href="index password.html">
+                        <h6>Password</h6>
+                    </a>
+                </div>
+                <div class="profile">
+                    <a href="index profile.html">
+                        <h6>Profile</h6>
+                    </a>
+                </div>
+            </div>
+            <div class="setting-input">
+                <div class="area">
+                    <div class="enter-username">
+                        <h5>UserName</h5>
+                    </div>
+                    <div class="user-content">
+                        <input type="text" id="emailInput" placeholder="admin@8gag.com">
+                    </div>
+                    <div class="save-changes">
+                        <button onclick="addEmail()">Save Changes</button>
+                    </div>
+                    <div class="user-records">
+                        <h2>User Records</h2>
+                        <div id="recordList"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        //nav-bar dropdown-list 
+        document.getElementById("dropdownIcon").addEventListener("click", function () {
+            var dropdownList = document.getElementById("dropdownList");
+            if (dropdownList.style.display === "none") {
+                dropdownList.style.display = "block";
+            } else {
+                dropdownList.style.display = "none";
+            }
+        });
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('#dropdownIcon')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        }
+        //end
+
+        function addEmail() {
+            var email = document.getElementById("emailInput").value;
+            if (validateEmail(email)) {
+                var recordList = document.getElementById("recordList");
+                var newRecord = document.createElement("div");
+                newRecord.className = "record";
+                newRecord.innerHTML = email + ' <button onclick="editRecord(this)">Edit</button> <button onclick="deleteRecord(this)">Delete</button>';
+                recordList.appendChild(newRecord);
+                document.getElementById("emailInput").value = "";
+            } else {
+                alert("Please enter a valid email address.");
+            }
+        }
+
+        function validateEmail(email) {
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
+        }
+
+        function editRecord(btn) {
+            var record = btn.parentNode;
+            var email = prompt("Enter the new email address:", record.firstChild.textContent);
+            if (email !== null && email !== "") {
+                if (validateEmail(email)) {
+                    record.firstChild.textContent = email;
+                } else {
+                    alert("Please enter a valid email address.");
+                }
+            }
+        }
+
+        function deleteRecord(btn) {
+            var record = btn.parentNode;
+            record.parentNode.removeChild(record);
+        }
+    </script>
+</body>
+
+</html>

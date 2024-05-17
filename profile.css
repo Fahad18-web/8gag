@@ -1,0 +1,392 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.navbar {
+    display: flex;
+    background-color: #ffffff;
+    color: #0d7ddf;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5vw;
+    border: 1px solid rgb(205, 205, 205);
+    width: 100vw;
+}
+
+.logo h3 {
+    margin: 0;
+    color: #0d7ddf;
+    font-size: 1.5rem;
+}
+
+/* .nav-items {
+ 
+} */
+
+#dropdownList {
+    display: none;
+    position: absolute;
+    top: 200;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding:2vw;
+    z-index: 1;
+    margin-left: -90px;
+}
+
+#dropdownIcon {
+    cursor: pointer;
+    font-size: 33px;
+}
+
+#dropdownList li {
+    list-style-type: none;
+}
+
+#dropdownList li a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    display: flex;
+    /* height: 92vh; */
+    /* width: 100vw; */
+}
+
+.left-content {
+    /* height: 1011vh; */
+    width: 40vw;
+}
+
+.inner-content {
+    padding-left: 1.5vw;
+    /* height: 81vh; */
+    width: 30vw;
+}
+
+.popularity {
+}
+
+.heading {
+    font-size: 26px;
+    color: black;
+    padding-top: 20px;
+    padding-left: 16px;
+    font-family: initial;
+    font-weight: 500;
+}
+
+.content-popularity {
+    width: 100%;
+    padding: 16px;
+}
+
+.content-popularity i {
+    padding-right: 10px;
+}
+
+.hot {
+    height: 37px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+    border-bottom: none;
+    padding-left: 10px;
+    border-radius: 3px;
+    color: blue;
+}
+
+.categories {
+}
+
+.heading-categories {
+    font-size: 26px;
+    color: black;
+    padding-left: 16px;
+    font-family: initial;
+}
+
+.content-categories {
+    width: 100%;
+    padding: 16px;
+}
+
+.cool {
+    height: 37px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+    border-bottom: none;
+    padding-left: 10px;
+    border-radius: 3px;
+    color: blue;
+}
+
+.mainbody {
+    width: 60vw;
+    padding-top: 1.5vw;
+    display: flex;
+}
+
+.setting-content {
+    /* height: 33vh; */
+    width: 20vw;
+}
+
+.setting-content h3 {
+    /* height: 9vh; */
+    /* width: 100%; */
+    padding-top: 12px;
+    padding-left: 14px;
+    font-size: 2vw;
+}
+
+.setting-content h6 {
+    /* width: 100%; */
+    /* height: 8vh; */
+    padding-left: 47px;
+    padding-top: 12px;
+    font-size: 18px;
+}
+
+.setting-content a {
+    text-decoration: none;
+    color: blue;
+}
+
+.setting-content h6:hover{
+    color: white;
+    background-color: rgb(38, 38, 214);
+    border-radius: 6px;
+    border: none;
+}
+
+.username , .password {
+    /* width: 97%; */
+    /* height: 8vh; */
+    border-radius: 7px;
+    border: 1px solid grey;
+    /* border-bottom: none; */
+}
+
+.profile {
+    /* width: 97%; */
+    /* height: 8vh; */
+    border-radius: 7px;
+    border: 1px solid grey;
+}
+
+.setting-input {
+    /* height: 54vh;
+    width: 70%; */
+    display: flex;
+    flex-direction: column;
+}
+
+.area {
+    /* height: 54vh; */
+    padding-top: 55px;
+    /* width: 100%; */
+}
+
+.avatar {
+    /* height: 26vh; */
+    width: 8vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.avatar h5 {
+    /* height: 8vh; */
+    /* width: 100%; */
+    font-size: 23px;
+    padding-left: 17px;
+    padding-top: 9px;
+}
+
+.pic {
+    height: 26vh;
+    width: 76%;
+}
+
+img {
+    /* height: 13vh; */
+    width: 6vw;
+}
+
+.file-upload {
+    /* height: 10vh;
+    width: 100%; */
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin-left: 54px;
+    margin-top: 20px;
+}
+
+.custom-file-upload {
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    border: 1px solid grey;
+    cursor: pointer;
+    margin-top: -2vw;
+    border-radius: 5px;
+    padding: 8px 9px;
+}
+
+.custom-file-upload span {
+    font-size: 1.5vw;
+}
+
+input[type="file"] {
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.padding {
+    /* height: 10vh; */
+    width: 40vw;
+    /* padding-top: 20px;
+    padding-left: 27px; */
+    padding: 1vw;
+}
+
+.save-changes {
+    padding-left: 3vw;
+    /* margin-top: -6vw; */
+}
+
+.save-changes button {
+    padding: 15px 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 51, 184);
+    border: 1px solid rgb(43, 43, 189);
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 600px){
+   
+    body{
+        /* height: 100dvh; */
+    }
+
+    .navbar{
+      width: 100vw;
+    }
+
+
+    .logo h3{
+        font-size: 1.5rem;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: row;
+    
+       }
+       
+       .left-content{
+        margin-left: 6vw;
+        margin-right: 10vw;
+        width: 80vw;
+        /* margin-top: -15vw; */
+       }
+    
+       .inner-content{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6vw;
+       }
+        
+       .hot{
+        width: 25vw;
+       }
+    
+       .cool{
+        width: 25vw;
+       }
+    
+       .mainbody{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 80vw; */
+
+       }
+        
+       .setting-content{
+        width: 40vw;
+        display: flex;
+        /* margin-top: -15vw; */
+        /* align-items: center; */
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 10vw;
+        /* margin-bottom: 20vw; */
+        flex-wrap: wrap;
+       }
+       .setting-content h3{
+           font-size: 5vw;
+           text-align: center;
+       }
+       
+       .setting-input{
+          margin-right: 10vw;
+       }
+
+
+       .area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 10vw;
+       }
+
+       .avatar{
+         width: 30vw;
+         display: flex;
+         align-items: center;
+       }
+
+       .file-upload{
+        width: 50vw;
+       }
+
+       .padding{
+        margin-top: 20px;
+
+       }
+
+       .custom-file-upload{
+       }
+
+       .save-changes{
+        margin-top: 1.5vw;
+       }
+}
+
