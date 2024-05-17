@@ -325,9 +325,9 @@ label{
        }
 
        .left-content{
-        margin-left: 6vw;
+/*         margin-left: 6vw;
         margin-right: 10vw;
-        width: 80vw;
+        width: 80vw; */
         /* margin-top: -15vw; */
        }
 
@@ -355,7 +355,7 @@ label{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 80vw;
+/*         width: 80vw; */
         margin: auto;
        }
 
