@@ -322,7 +322,8 @@ input[type="file"] {
        }
         
        .hot{
-        width: 25vw;
+        width: 30vw;
+        padding:10px 5px;
        }
     
        .cool{
