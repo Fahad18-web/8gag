@@ -144,8 +144,7 @@ p{
 }
 @media screen and (max-width: 600px) {
     .navbar{
-        width: 80vw;
-        margin: auto;
+        width: 100vw;
     }
 
 
