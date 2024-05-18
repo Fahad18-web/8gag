@@ -224,8 +224,8 @@ html,body{
 }
 
 .pic {
-    height: 26vh;
-    width: 76%;
+/*     height: 26vh;
+    width: 76%; */
 }
 
 img {
@@ -250,6 +250,7 @@ img {
     margin-top: -2vw;
     border-radius: 5px;
     padding: 8px 9px;
+    width:18vw;
 }
 
 .custom-file-upload span {
@@ -268,11 +269,13 @@ input[type="file"] {
     /* padding-top: 20px;
     padding-left: 27px; */
     padding: 1vw;
+    display:flex;
+    align-items:center;
 }
 
 .save-changes {
     padding-left: 3vw;
-    /* margin-top: -6vw; */
+    margin-top: 3vw;
 }
 
 .save-changes button {
@@ -376,19 +379,26 @@ input[type="file"] {
        }
 
        .file-upload{
-        width: 50vw;
+        width: 45vw;
        }
 
        .padding{
-        margin-top: 20px;
+        flex-direction:row;
 
        }
 
        .custom-file-upload{
+        width:60vw;
        }
 
        .save-changes{
         margin-top: 1.5vw;
+       }
+
+        .save-changes button{
+         width: 20vw;
+         padding: 10px 5px;
+         font-size: 2.5vw;
        }
 }
 
