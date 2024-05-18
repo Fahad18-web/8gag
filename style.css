@@ -247,7 +247,7 @@ body {
 }
 
 .login-form button {
-    position: absolute;
+/*     position: absolute; */
     /* top: 225px; */
     text-decoration: none;
     padding: 1.5vw;
@@ -333,7 +333,7 @@ body {
    .login-form button{
       width: 30vw;
       margin-left: 15vw;
-      margin-top: 8vw;
+/*       margin-top: 8vw; */
       padding: 10px 5px;
    }
 
