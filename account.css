@@ -355,22 +355,24 @@ body {
     }
 
     .user-content{
-        margin-top: -1vw;
+/*         margin-top: -1vw; */
     }
 
     .user-content input{
-        width: 30vw;
-        height: 8vh;
+        width: 35vw;
+        padding:10px 5px;
+/*         height: 8vh; */
     }
 
     .save-changes button{
-        width: 15vw;
+        width: 20vw;
+        padding:10px 5px;
         font-size: 1.5vw;
 
     }
 
     .user-records{
-        height: 10vh;
+/*         height: 10vh; */
     }
 
     .user-records h2{
